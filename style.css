@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200;300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
+*{
+    border : 0;
+    margin : 0;
+
+}
+.header-text{
+    font-family: 'Handjet', cursive;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 80px;
+    padding: 42px;
+    text-align: center;
+    background: #111720;
+}
+.content-1{
+    background: rgb(32,33,36);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 32px;
+    gap: 30px;
+}
+.content-2{
+    background: rgb(32,33,36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    font-size: 30px;
+    font-family: 'Handjet', cursive;
+    color:#F9FAF8;
+    text-align: center;
+}
+.score-1{
+    padding: 30px;
+    border: solid rgb(66, 129, 66);
+    border-radius: 30px;
+    border-width: 5px;
+}
+.divider{
+    color:#F9FAF8;
+    font-size: 200px;
+    font-family: 'Handjet', cursive;
+    font-weight: 200;
+
+}
+.score-2{
+    padding: 30px;
+    border: solid rgb(129, 48, 48);
+    border-radius: 30px;
+    border-width: 5px;
+
+}
+.score1-text{
+    color: rgb(66, 129, 66);
+    font-family: 'Handjet', cursive;
+    font-size: 80px;
+}
+.score2-text{
+    color: rgb(129, 48, 48);
+    font-family: 'Handjet', cursive;
+    font-size: 80px;
+}
+button{
+    background-color: #111720;
+    border-radius: 20px;
+    transition: all .6s ease;
+}
+button:hover {
+    background-color: #393e46;
+}
+img{
+    height: auto;
+    width: 120px;
+    padding: 30px;
+}
+
+ul{
+    list-style: none;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 50px;
+}
+
+.content-3{
+    padding: 40px;
+    background: rgb(32,33,36);
+    text-align: center;
+    font-family: 'Handjet', cursive;
+    color:#F9FAF8;
+}
+.selection-list{
+    display: flex;
+    justify-content: space-around;
+}
+.pselection{
+    font-family: 'Handjet', cursive;
+    font-size: 30px;
+}
+.cselection{
+    font-family: 'Handjet', cursive;
+    font-size: 30px;
+}
+.footer{
+    background: #111720;
+    font-family: 'Handjet', cursive;
+    font-size: 30px;
+    text-align: center;
+    color:#F9FAF8;
+    padding: 20px;
+}
