@@ -34,10 +34,14 @@
     text-align: center;
 }
 .score-1{
-    padding: 30px;
+    text-align: center;
+    width: 250px;
+    padding: 25px;
     border: solid rgb(66, 129, 66);
     border-radius: 30px;
     border-width: 5px;
+    max-width:500px;
+    display: inline-block;
 }
 .divider{
     color:#F9FAF8;
@@ -47,10 +51,14 @@
 
 }
 .score-2{
-    padding: 30px;
+    text-align: center;
+    width: 250px;
+    padding: 25px;
     border: solid rgb(129, 48, 48);
     border-radius: 30px;
     border-width: 5px;
+    max-width:500px;
+    display: inline-block;
 
 }
 .score1-text{

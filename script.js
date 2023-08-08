@@ -21,7 +21,7 @@ function playRound(a, b)
 {
     if (a == b)
     {
-        console.log("Draw")
+        return "Draw"
         playerpoints ++;
         computerpoints ++;
 
@@ -42,36 +42,38 @@ function playRound(a, b)
     }
 }
 // Single game
-//document.getElementById("button-rock").addEventListener("click", myFunction);
-//document.querySelector(".button-rock").addEventListener("click, ")
-
-function singlegame()
+function singlegame(playerSelection)
 {
-    const playerSelection = prompt("Enter a Choice: ");
     const computerSelection = getComputerChoice();
+    //updating computer selection on display
+    document.querySelector(".cselection").textContent = `Computer Chose: ${computerSelection}`;
+    document.querySelector(".pselection").textContent = `Human Chose: ${playerSelection}`; 
+    
     console.log(playRound(playerSelection, computerSelection));
-    console.log(`Player points: ${playerpoints}`)
-    console.log(`Computer points: ${computerpoints}`)
+    document.querySelector(".score1-text").textContent = `${playerpoints}`;
+    document.querySelector(".score2-text").textContent = `${computerpoints}`;
+    if (playerpoints > 5)
+    {
+        document.querySelector(".header-text").textContent = "Congratulations you won the game!!!";
+    }
+    else if (computerpoints > 5)
+    {
+        document.querySelector(".header-text").textContent = "You Lose the game!!!";
+    }
+
+
+}
+document.querySelector(".buttonrock").addEventListener("click",function(){
+    singlegame("rock")
+}
+);
+document.querySelector(".buttonpaper").addEventListener("click",function(){
+    singlegame("paper")
+}
+);
+document.querySelector(".buttonscissor").addEventListener("click",function(){
+    singlegame("scissor")
+
 }
 
-for (let i = 0; i < 5; i++)
-{
-    console.log("----------------------------")
-    console.log(`Round ${i+1}`)
-    singlegame()
-}
-
-if (playerpoints > computerpoints)
-{
-    console.log("Congratulations!! You Won the Game")
-}
-else if (playerpoints < computerpoints){
-    console.log("You Lose the Game")
-}
-else{
-    console.log("Its DRAW!!")
-}
-
-
-
-
+);
