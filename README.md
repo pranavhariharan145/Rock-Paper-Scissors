@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors
 An oldschool game of rock paper scissor to web
 created by Slimsy
-#About
+# About
 A fun website where user can play a game against machine
 Credits: [@The Odin Project](https://www.theodinproject.com/)
 # Links 
